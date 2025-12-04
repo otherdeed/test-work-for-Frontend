@@ -11,7 +11,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    copy: typeof import('./src/components/todo-component/todo-component-list copy.vue')['default']
     HeaderComponent: typeof import('./src/components/header-component/index.vue')['default']
     TodoComponent: typeof import('./src/components/todo-component/index.vue')['default']
+    TodoComponentActivity: typeof import('./src/components/todo-component/todo-component-activity.vue')['default']
+    TodoComponentAdd: typeof import('./src/components/todo-component/todo-component-add.vue')['default']
+    TodoComponentFilter: typeof import('./src/components/todo-component/todo-component-filter.vue')['default']
+    TodoComponentItem: typeof import('./src/components/todo-component/todo-component-item.vue')['default']
+    TodoComponentList: typeof import('./src/components/todo-component/todo-component-list.vue')['default']
+    TodoComponentStatistics: typeof import('./src/components/todo-component/todo-component-statistics.vue')['default']
   }
 }
